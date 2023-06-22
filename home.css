@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(19, 19, 19);
+}
+
+
+/* 여기부터는 상난 바 */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  position: relative;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 200px;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.navbar-menu a:hover {
+  color: #1CB386;
+}
+
+@media (max-width: 360px) {
+  .navbar-menu a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 414px) {
+  .navbar-logo img {
+    width: 150px;
+  }
+
+  .navbar-menu a {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar {
+    padding-left: 12vw;
+    padding-right: 12vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .navbar {
+    padding-left: 16vw;
+    padding-right: 16vw;
+  }
+}
+
+@media (min-width: 1100px) {
+  .navbar {
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    padding-left: 23vw;
+    padding-right: 23vw;
+  }
+}
+
+@media (min-width: 1600px) {
+  .navbar {
+    padding-left: 30vw;
+    padding-right: 30vw;
+  }
+}
+
+@media (min-width: 2400px) {
+  .navbar {
+    padding-left: 36vw;
+    padding-right: 36vw;
+  }
+}
+
+@media (min-width: 3300px) {
+  .navbar {
+    padding-left: 39vw;
+    padding-right: 39vw;
+  }
+}
+
+
+/* 여기부터는 소개 칸 */
+
+
+#int {
+  width: auto;
+  height: auto;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* 수정: 가로 정렬 */
+  padding-left: 00vw;
+  padding-right: 00vw;
+  clear: both;
+  text-align: center;
+  line-height: 1.5;
+  color: white;
+}
+
+@media (max-width: 414px) {
+  #int {
+    font-size: 70%;
+  }
+}
+
+/* 여기부터는 프로젝트 */
+
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.project {
+  width: auto;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 5px; 
+}
+
+.project .image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px; 
+}
+
+.project .image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project img {
+  object-fit: cover;
+}
+
+@media (max-width: 850px) {
+  .projects {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  
+  .project {
+    width: 100%;
+  }
+
+  .project .image-container {
+    aspect-ratio: 16/9;
+  }
+}
+
+/* 여기부터는  */
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container a {
+  display: block;
+  margin: 20px;
+}
+
+/* 여기부터는 푸터 */
+
+
+footer {
+  background-color: #1b1b1b;
+  padding: 20px;
+  color: white
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
